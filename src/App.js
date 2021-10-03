@@ -1,7 +1,7 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button' 
 import Navbar from './components/Navbar'
+import * as bootstrap from 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
@@ -10,7 +10,6 @@ function App() {
 
       {/* Testing */}
       <h1>Hiiii</h1>
-      <Button>Test Button</Button>
     </div>
   );
 }
