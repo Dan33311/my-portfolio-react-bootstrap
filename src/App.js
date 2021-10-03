@@ -1,7 +1,8 @@
-import './App.css';
+// import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import './css/main.min.css'
 import Navbar from './components/Navbar'
 import * as bootstrap from 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Navbar></Navbar>
 
       {/* Testing */}
-      <h1>Hiiii</h1>
+      <h1 className="text-primary">Hiiii</h1>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import './navbar.css'
+
 
 const Navbar = () => {
   return (  
@@ -7,7 +9,7 @@ const Navbar = () => {
         <a className="navbar-brand" href="#intro">
           <span className="text-secondary fw-bold">
             <i className="bi bi-trophy-fill"></i>
-            DANIEL SANDOVAL
+            DANIEL SAN
           </span>
         </a>
         {/* toggle button for mobile nav */}

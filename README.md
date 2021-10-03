@@ -1,7 +1,7 @@
 # My notes
 Create react app
 install bootstrap
-basic test working
+config bootstrap using CND or Webpack
 
 
 
