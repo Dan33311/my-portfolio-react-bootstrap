@@ -1,9 +1,16 @@
 # My notes
-Create react app
-install bootstrap
-config bootstrap using CND or Webpack
+* Create react app
+* install bootstrap
+* config bootstrap using CND or Webpack
 
+* add styles components ()
+* customizing Bootstrap [check notebook notes]
 
+* npm install bootstrap-icons, (index.js `'bootstrap-icons/font/bootstrap-icons.css'`)
+
+* Use a svg as background image (css styles background-image)
+* set a negative margin because in bootstrap it has to be configured before using it. (main.css `$enable-negative-margins: true;`)
+* `/* toggle button for mobile nav */` color changed black to white (navbar.css (`.custom-toggler`))
 
 # Getting Started with Create React App
 
