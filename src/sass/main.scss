@@ -2,13 +2,15 @@
 // custom variable values
 // $primary: #d89a0f;
 $enable-negative-margins: true;
-$primary: #d89a0f;
+$primary: #2bd958;
 $light: #fbf5e5;
 
 // import the functions & variables
 // @import "../node_modules/bootstrap/scss/_functions";
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Prata&display=swap');
 
 
 // custom theme colours

@@ -1,19 +1,15 @@
-
-/* .navbar-brand {
-  outline: 1px solid red;
-} */
-
-/* .mynavbar {
-  background: fixed;
-} */
-
 .navbar {
-  /* display: flex; */
-  background-image: url(../assets/wave.svg);
+  background-image: url(../assets/background-gradient-hero.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 470px;
+  height: 250px;
+}
+
+.navbar-brand img {
+  width: 60px;
+  margin-right: 20px;
+  margin-top: -7px;
 }
 
 .custom-toggler .navbar-toggler-icon {
