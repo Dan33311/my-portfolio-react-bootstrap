@@ -11,7 +11,7 @@ const About = () => {
           <div className="col-md-5 text-center text-md-start">
             <div className="card border-0">
               <div className="card-body text-center py-4">
-                <h3 className="card-title mb-2 display-5" style={{fontFamily: 'Prata'}}>About Me</h3>
+                <h2 className="card-title mb-2 display-5" style={{fontFamily: 'Prata'}}>About Me</h2>
                 <div>
                   <img src={lineImage} className="img-fluid mb-4" alt="line" />
                 </div>
