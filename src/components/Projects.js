@@ -1,8 +1,11 @@
+import ProjectCard from './ProjectCard'
+
 import lineImage from '../assets/line-b.png'
 import projectImgOne from "../assets/square-kcc.png";
 import projectImgTwo from "../assets/square-spacex.png";
 import projectImgThree from "../assets/square-toodo.png";
 import projectImgFour from "../assets/square-toodo2.png";
+import projectIcon from '../assets/computer.png'
 
 
 const projectsCards = [
@@ -11,31 +14,31 @@ const projectsCards = [
     title: 'SpaceX-API',
     description: 'Working with the SpaceX API, you can get info about launches, missions, rockets through a UI',
     text: 'React, Router, API',
-    icon: '',
+    icon: projectIcon,
     image: projectImgTwo
   },
   {
     id: 2,
     title: 'KOFCOLOMBIA',
-    description: '',
-    text: 'React, Javascript, CSS, HTML',
-    icon: '',
+    description: 'React app, mainly using Bootstrap for styles and we are able to customize styles through a SASS file',
+    text: 'React, Bootstrap, SASS',
+    icon: projectIcon,
     image: projectImgOne
   },
   {
     id: 3,
-    title: 'TODO App',
-    description: '',
-    text: 'React, Javascript, CSS, HTML',
-    icon: '',
+    title: 'TOODO App',
+    description: 'A TODO app, using React, and React-Router, HOOKS and CSS for styles, you can add, list, edit and delete task ',
+    text: 'React, React-Router, CRUD, CSS, HTML',
+    icon: projectIcon,
     image: projectImgThree
   },
   {
     id: 4,
     title: 'Markdown',
-    description: '',
-    text: 'React, Javascript, CSS, HTML',
-    icon: '',
+    description: 'This app allow us view a basic info about Fighting Games events, tournaments and competitons, you could publish your own event, edit and deleted it',
+    text: 'NodeJS, Express, MongoDB, EJS',
+    icon: projectIcon,
     image: projectImgFour
   },
 ]
@@ -53,17 +56,24 @@ const Projects = () => {
         </div>
 
 
-        <div className="row my-3 g-3 align-items-center justify-content-center">
-          {projectsCards.map(projectCard => 
-            <div className="col-10 col-lg-4 col-xl-4" key={projectCard.id}>          
-              {/* <ProjectCard 
-                title={projectCard.title} 
-                iconSrc={projectCard.icon} 
-                description={projectCard.description} 
-                text={projectCard.text}
-                logosSrc={projectCard.image}
-              /> */}
-            </div>)}          
+        <div>
+          {projectsCards.map(projectCard =>
+          <div className="card"> 
+            <div className="row justify-content-center align-items-center" key={projectCard.id}>
+              <div className="col-md-4 border border-danger">
+                <img className="px-0 mx-0" src={projectCard.image} alt="image project" />         
+              </div>
+              <div className="col-md-6 border border-danger"> 
+                <ProjectCard 
+                  title={projectCard.title} 
+                  description={projectCard.description} 
+                  iconSrc={projectCard.icon} 
+                  text={projectCard.text}
+                  // imageSrc={projectCard.image}
+                />
+              </div>
+            </div>
+          </div>)}          
         </div>
 
       </div>
