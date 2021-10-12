@@ -1,6 +1,6 @@
 const Techcard = ({title, iconSrc, description, textOne, titleTwo, itemOne, itemTwo, itemThree, itemFour, logosSrc }) => {
   return (  
-    <div className="card border border-danger">
+    <div className="card">
       <div className="card-body text-center py-4">
         <img src={iconSrc} alt="icon" className="img-responsive mb-4" style={{width: '60px'}}/>
         <h4 className="card-title">{title}</h4>

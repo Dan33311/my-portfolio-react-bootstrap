@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import * as bootstrap from 'bootstrap'
 import About from './components/About';
 import TechCards from './components/TechCards';
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <About/>
       <TechCards/>
+      <Projects/>
     </div>
   );
 }
