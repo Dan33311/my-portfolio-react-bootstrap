@@ -1,3 +1,4 @@
+import './navbar.css'
 import ProjectCard from './ProjectCard'
 
 import lineImage from '../assets/line-b.png'
@@ -17,8 +18,17 @@ const projectsCards = [
     icon: projectIcon,
     image: projectImgTwo
   },
+  
   {
     id: 2,
+    title: 'TOODO App',
+    description: 'A TODO app, using React, and React-Router, HOOKS and CSS for styles, you can add, list, edit and delete task ',
+    text: 'React, React-Router, CRUD, CSS',
+    icon: projectIcon,
+    image: projectImgThree
+  },
+  {
+    id: 3,
     title: 'KOFCOLOMBIA',
     description: 'React app, mainly using Bootstrap for styles and we are able to customize styles through a SASS file',
     text: 'React, Bootstrap, SASS',
@@ -26,17 +36,9 @@ const projectsCards = [
     image: projectImgOne
   },
   {
-    id: 3,
-    title: 'TOODO App',
-    description: 'A TODO app, using React, and React-Router, HOOKS and CSS for styles, you can add, list, edit and delete task ',
-    text: 'React, React-Router, CRUD, CSS, HTML',
-    icon: projectIcon,
-    image: projectImgThree
-  },
-  {
     id: 4,
     title: 'Markdown',
-    description: 'This app allow us view a basic info about Fighting Games events, tournaments and competitons, you could publish your own event, edit and deleted it',
+    description: 'This app allow us view a basic info about Fighting Games events, you could publish your own event, edit and deleted it',
     text: 'NodeJS, Express, MongoDB, EJS',
     icon: projectIcon,
     image: projectImgFour
@@ -50,20 +52,21 @@ const Projects = () => {
 
         <div className="text-center">
           <h2 className="card-title mt-4 mb-2 display-5" style={{fontFamily: 'Prata'}}>Projects</h2>
-          <div>
+          <div className="mb-4">
             <img src={lineImage} className="img-fluid" alt="line" />
           </div>
         </div>
 
 
-        <div>
+        <div className="projectCardWrapper">
           {projectsCards.map(projectCard =>
-          <div className="card"> 
-            <div className="row justify-content-center align-items-center" key={projectCard.id}>
-              <div className="col-md-4 border border-danger">
-                <img className="px-0 mx-0" src={projectCard.image} alt="image project" />         
+          <div className="card cardd d-flex flex-row-reverse bg-light mb-3"> 
+            <div className="projectCard d-flex row g-0 justify-content-center align-items-center" key={projectCard.id}>
+              <div className="col-md-4 d-flex justify-content-end">
+                {/* style={{width: '300px'}} */}
+                <img className="img-fluid rounded-start" src={projectCard.image} alt="project" style={{height: '396px'}}/>         
               </div>
-              <div className="col-md-6 border border-danger"> 
+              <div className="bg-white col-md-5 border rounded-end"> 
                 <ProjectCard 
                   title={projectCard.title} 
                   description={projectCard.description} 

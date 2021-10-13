@@ -19,3 +19,13 @@
 .custom-toggler.navbar-toggler {
   border-color: rgb(255, 255, 255, 0.8);
 }
+
+/* .projectCard{
+  border: 5px solid blueviolet;
+} */
+
+.cardd:nth-child(2) {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  border: 10px solid salmon;
+}
