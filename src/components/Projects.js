@@ -1,12 +1,12 @@
-import './navbar.css'
-import ProjectCard from './ProjectCard'
+import './navbar.css';
+import ProjectCard from './ProjectCard';
 
 import lineImage from '../assets/line-b.png'
 import projectImgOne from "../assets/square-kcc.png";
 import projectImgTwo from "../assets/square-spacex.png";
 import projectImgThree from "../assets/square-toodo.png";
 import projectImgFour from "../assets/square-toodo2.png";
-import projectIcon from '../assets/computer.png'
+import projectIcon from '../assets/computer.png';
 
 
 const projectsCards = [
@@ -14,7 +14,7 @@ const projectsCards = [
     id: 1,
     title: 'SpaceX-API',
     description: 'Working with the SpaceX API, you can get info about launches, missions, rockets through a UI',
-    text: 'React, Router, API',
+    text: 'React, Router, API, Fetch',
     icon: projectIcon,
     image: projectImgTwo
   },
@@ -22,7 +22,7 @@ const projectsCards = [
   {
     id: 2,
     title: 'TOODO App',
-    description: 'A TODO app, using React, and React-Router, HOOKS and CSS for styles, you can add, list, edit and delete task ',
+    description: 'A TODO app, using React and React-Router, HOOKS, you can add, list, edit and delete task',
     text: 'React, React-Router, CRUD, CSS',
     icon: projectIcon,
     image: projectImgThree
@@ -37,8 +37,8 @@ const projectsCards = [
   },
   {
     id: 4,
-    title: 'Markdown',
-    description: 'This app allow us view a basic info about Fighting Games events, you could publish your own event, edit and deleted it',
+    title: 'Markdown App',
+    description: 'This app allow us to write Markdown, you could view Markdown info, edit and deleted it',
     text: 'NodeJS, Express, MongoDB, EJS',
     icon: projectIcon,
     image: projectImgFour
@@ -64,10 +64,10 @@ const Projects = () => {
           <div className="card card-w bg-transparent border border-0 mb-3 pt-2">
             {/* aca aplica el row-reverse, NO funcionan los child */}
             <div className="card-p row g-0  justify-content-center align-items-center" key={projectCard.id}>
-              <div className="card-i col-md-4 d-flex">{/* justify-content-end */}
-                <img className="img-fluid " src={projectCard.image} alt="project" style={{height: '396px'}}/>         
+              <div className="card-i d-none d-sm-none d-md-block col-md-4 d-flex" style={{width: '303px', height: '304px'}}>{/* justify-content-end */}
+                <img className="img-fluid" src={projectCard.image} alt="project" style={{height: '304px'}}/>         
               </div>
-              <div className="card-c bg-white col-md-5"> 
+              <div className="card-c bg-white col-md-5" style={{width: '424px', height: '304px'}}> 
                 <ProjectCard 
                   title={projectCard.title} 
                   description={projectCard.description} 

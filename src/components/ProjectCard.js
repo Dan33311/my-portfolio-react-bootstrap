@@ -3,8 +3,8 @@ const ProjectCard = ({ title, description, iconSrc, text }) => {
     <>
       {/* <img src={imageSrc} alt="image project" /> */}
       {/* <div className="card"> */}
-        <div className="card-body card-cc text-center py-4"  style={{width: '100%'}}>
-          <h4 className="card-title my-3">{title}</h4>
+        <div className="card-body card-cc text-center py-4"  >{/* style={{width: '500px', height: '320px'}} */}
+          <h4 className="card-title mt-2 mb-3">{title}</h4>
           {/* <p className="card-text mx-5 text-muted d-none d-lg-block">{description}</p> */}
           <p className="card-text mx-5 text-muted d-lg-block mb-4">{description}</p>
           {/* style={{width: '300px'}} */}

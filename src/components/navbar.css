@@ -21,32 +21,20 @@
 }
 
 
+/* tech stack section  ------------------------------------------------  */
+/* border: 1px solid red; */
+
+.card-tc {
+  border-radius: 0.75rem;
+}
+
+
 /* projects section  --------------------------------------------------  */
 .card-w:nth-child(even) .card-p {
   display: flex;
   flex-direction: row-reverse;
 }
 
-/* .card-w:nth-child(even) .card-p {
-  border: 1px solid red;
-  margin-left: 60px;
-} */
-
-/* .card-w:nth-child(odd) .card-p {
-  margin-right: -50px;
-} */
-
-/* .card-p{
-  margin-left: 100px;
-} */
-
-
-.card-w:nth-child(even) .card-i {
-  justify-content: start;
-}
-.card-w:nth-child(odd) .card-i {
-  justify-content: end;
-}
 
 .card-w:nth-child(odd) .card-i img {
   border-radius: 0.5rem 0 0 0.5rem;
@@ -62,6 +50,5 @@
 }
 .card-w:nth-child(even) .card-c{
   border: 1px solid #dee2e6;
-
   border-radius: 0.5rem 0 0 0.5rem;
 }

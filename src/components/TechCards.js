@@ -1,12 +1,13 @@
+import './navbar.css';
 import Techcard from "./TechCard";
-import lineImage from '../assets/line-b.png'
 
-import icon1 from '../assets/setting.png'
+import lineImage from '../assets/line-b.png';
+import icon1 from '../assets/setting.png';
 import icon2 from '../assets/frontend-icon.png'
-import icon3 from '../assets/other-tools.png'
-import logosBack from '../assets/logos-back.png'
-import logosFront from '../assets/logos-front.png'
-import logosOthers from '../assets/logos-other.png'
+import icon3 from '../assets/other-tools.png';
+import logosBack from '../assets/logos-back.png';
+import logosFront from '../assets/logos-front.png';
+import logosOthers from '../assets/logos-other.png';
 
 
 
@@ -44,8 +45,8 @@ const cards = [
   {
     id: 3,
     title: 'Other Skills',
-    description: 'Around 10 years experience working as a Graphic Designer, intermedium english level',
-    text1: 'Graphic Design, English',
+    description: 'Around 10 years experience working as a Graphic Designer, intermedium english level and more...',
+    text1: 'Graphic Design, English, others',
     title2: '*Other Dev Tech & Tools',
     items: {
       item1: 'Figma',
@@ -62,7 +63,7 @@ const cards = [
 const Cards = () => {
   console.log(cards)
   return (
-    <section id="techstack" className="bg-light mt-5 pb-5 pt-5">
+    <section id="techstack" className="bg-dark bg-opacity-10 mt-5 pb-5 pt-5">
       <div className="container-lg">
 
         <div className="text-center">
