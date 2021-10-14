@@ -47,7 +47,7 @@ const projectsCards = [
 
 const Projects = () => {
   return (  
-    <section id="techstack" className="bg-light mt-5 pt-5">
+    <section id="techstack" className="bg-dark bg-opacity-10 py-5">
       <div className="container-lg">
 
         <div className="text-center">
@@ -58,21 +58,21 @@ const Projects = () => {
         </div>
 
 
-        <div className="projectCardWrapper">
+        <div>
           {projectsCards.map(projectCard =>
-          <div className="card cardd d-flex flex-row-reverse bg-light mb-3"> 
-            <div className="projectCard d-flex row g-0 justify-content-center align-items-center" key={projectCard.id}>
-              <div className="col-md-4 d-flex justify-content-end">
-                {/* style={{width: '300px'}} */}
-                <img className="img-fluid rounded-start" src={projectCard.image} alt="project" style={{height: '396px'}}/>         
+          // funcionan los child, NO row-reverse
+          <div className="card card-w bg-transparent border border-0 mb-3 pt-2">
+            {/* aca aplica el row-reverse, NO funcionan los child */}
+            <div className="card-p row g-0  justify-content-center align-items-center" key={projectCard.id}>
+              <div className="card-i col-md-4 d-flex">{/* justify-content-end */}
+                <img className="img-fluid " src={projectCard.image} alt="project" style={{height: '396px'}}/>         
               </div>
-              <div className="bg-white col-md-5 border rounded-end"> 
+              <div className="card-c bg-white col-md-5"> 
                 <ProjectCard 
                   title={projectCard.title} 
                   description={projectCard.description} 
                   iconSrc={projectCard.icon} 
                   text={projectCard.text}
-                  // imageSrc={projectCard.image}
                 />
               </div>
             </div>

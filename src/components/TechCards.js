@@ -62,7 +62,7 @@ const cards = [
 const Cards = () => {
   console.log(cards)
   return (
-    <section id="techstack" className="bg-light mt-5 pt-5">
+    <section id="techstack" className="bg-light mt-5 pb-5 pt-5">
       <div className="container-lg">
 
         <div className="text-center">
