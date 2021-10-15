@@ -16,7 +16,9 @@ const projectsCards = [
     description: 'Working with the SpaceX API, you can get info about launches, missions, rockets through a UI',
     text: 'React, Router, API, Fetch',
     icon: projectIcon,
-    image: projectImgTwo
+    image: projectImgTwo,
+    urlProject: 'https://spacex-phi.vercel.app/',
+    urlRepo: 'https://github.com/Dan33311/spacex'
   },
   
   {
@@ -25,15 +27,21 @@ const projectsCards = [
     description: 'A TODO app, using React and React-Router, HOOKS, you can add, list, edit and delete task',
     text: 'React, React-Router, CRUD, CSS',
     icon: projectIcon,
-    image: projectImgThree
+    image: projectImgThree,
+    urlProject: 'https://dan-toodoo.netlify.app/',
+    urlRepo: 'https://github.com/Dan33311/todo-react-app'
+    
   },
   {
     id: 3,
     title: 'KOFCOLOMBIA',
-    description: 'React app, mainly using Bootstrap for styles and we are able to customize styles through a SASS file',
-    text: 'React, Bootstrap, SASS',
+    description: 'This app is using Bootstrap, we are able to customize Bootstrap styles through a SASS file',
+    text: 'Bootstrap, SASS, Gulp',
     icon: projectIcon,
-    image: projectImgOne
+    image: projectImgOne,
+    urlProject: 'https://kofcolombiacup.netlify.app/',
+    urlRepo: 'https://github.com/Dan33311/bootstrap-app'
+    
   },
   {
     id: 4,
@@ -41,13 +49,15 @@ const projectsCards = [
     description: 'This app allow us to write Markdown, you could view Markdown info, edit and deleted it',
     text: 'NodeJS, Express, MongoDB, EJS',
     icon: projectIcon,
-    image: projectImgFour
+    image: projectImgFour,
+    urlProject: 'https://markdown-fighting-games-events.herokuapp.com/',
+    urlRepo: 'https://github.com/Dan33311/markdown-crud-project'
   },
 ]
 
 const Projects = () => {
   return (  
-    <section id="techstack" className="bg-dark bg-opacity-10 py-5">
+    <section id="projects" className="bg-dark bg-opacity-10 py-5">
       <div className="container-lg">
 
         <div className="text-center">
@@ -73,6 +83,8 @@ const Projects = () => {
                   description={projectCard.description} 
                   iconSrc={projectCard.icon} 
                   text={projectCard.text}
+                  urlProject={projectCard.urlProject}
+                  urlRepo={projectCard.urlRepo}
                 />
               </div>
             </div>

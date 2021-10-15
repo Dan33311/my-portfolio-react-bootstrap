@@ -1,4 +1,4 @@
-const ProjectCard = ({ title, description, iconSrc, text }) => {
+const ProjectCard = ({ title, description, iconSrc, text, urlProject, urlRepo }) => {
   return (  
     <>
       {/* <img src={imageSrc} alt="image project" /> */}
@@ -13,8 +13,8 @@ const ProjectCard = ({ title, description, iconSrc, text }) => {
               <img src={iconSrc} alt="icon" className="img-responsive mb-2 me-1" style={{width: '40px'}}/>            
             </span> {text}
           </p>
-          <button className="btn btn-primary rounded text-light me-2 mb-3" style={{width: '95px'}}>View</button>
-          <button className="btn btn-secondary rounded text-light ms-2 mb-3">GitHub</button>
+          <a className="btn btn-primary rounded text-light me-2 mb-3" href={urlProject} target="_blank" style={{width: '95px'}}>View</a>
+          <a className="btn btn-secondary rounded text-light ms-2 mb-3" href={urlRepo} target="_blank">GitHub</a>
         {/* </div> */}
       </div>
     </>
