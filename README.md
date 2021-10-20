@@ -1,3 +1,24 @@
+# My Portfolio
+***
+_This project is my portfolio; it is made in order to show my profile, languages, libraries and other development tools that I use and some of my work._
+
+
+## Technologies
+***
+A list of technologies used within the project:
+* [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
+* [Bootstrap](https://getbootstrap.com/) - the most popular CSS Framework for developing responsive and mobile-first websites.
+* [Bootstrap Icons](https://icons.getbootstrap.com/) - open source icon library
+
+
+## Site
+***
+(https://)
+
+
+ ## Others
+ ***
+
 # My notes
 * Create react app
 * install bootstrap
