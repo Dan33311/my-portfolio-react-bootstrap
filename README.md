@@ -33,10 +33,10 @@ A list of technologies used within the project:
 * set a negative margin because in bootstrap it has to be configured before using it. (main.css `$enable-negative-margins: true;`)
 * `/* toggle button for mobile nav */` color changed black to white (navbar.css (`.custom-toggler`))
 
-* Abour Me section added
+* About Me section added
  
 
-# Getting Started with Create React App
+***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
