@@ -19,19 +19,19 @@ const Navbar = () => {
 
         {/* navbar links */}
         <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav nav-n">
             <li className="nav-item ms-3">
-              <a className="nav-link text-light" href="#about">About Me</a>
+              <a className="nav-link nav-a text-light" href="#about">About Me</a>
             </li>
             <li className="nav-item ms-3">
-              <a className="nav-link text-light" href="#techstack">TechStack</a>
+              <a className="nav-link nav-a text-light" href="#techstack">TechStack</a>
             </li>
             <li className="nav-item ms-3">
-              <a className="nav-link text-light" href="#projects">Projects</a>
+              <a className="nav-link nav-a text-light" href="#projects">Projects</a>
             </li>
             {/* d-md-none -> display like a text in medium and up screens */}
             <li className="nav-item ms-3">
-              <a className="nav-link text-light" href="#contact">Contact</a>
+              <a className="nav-link nav-a text-light" href="#contact">Contact</a>
             </li>
             
           </ul>

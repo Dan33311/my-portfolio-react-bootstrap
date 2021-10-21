@@ -57,7 +57,7 @@ const projectsCards = [
 
 const Projects = () => {
   return (  
-    <section id="projects" className="bg-dark bg-opacity-10 py-5">
+    <section id="projects" className="ps bg-dark bg-opacity-10">
       <div className="container-lg">
 
         <div className="text-center">
