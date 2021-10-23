@@ -1,6 +1,6 @@
 import lineImage from '../assets/line-w.png'
-import emailImg from '../assets/email.png'
-import linkedinImg from '../assets/linkedin.png'
+import emailImg from '../assets/email-e.png'
+import linkedinImg from '../assets/linkedin-e.png'
 import smartphoneImg from '../assets/smartphone-with-a-smile.png'
 import './navbar.css';
 
@@ -25,14 +25,18 @@ const Contact = () => {
             <div>
               <img src={lineImage} className="img-fluid mb-4" alt="line" />
             </div>
-            <div className="d-flex justify-content-around mt-5 pt-5" style={{width: '400px'}}>
-              <a href="https://www.linkedin.com/in/dan-sandoval/" target="_blank">
-                <img src={linkedinImg} className="img-fluid mb-4" alt="linkedin" style={{width: '60px'}}/>
+            <div className="d-flex justify-content-around align-items-center my-5 pt-5" style={{width: '400px'}}>
+              <a className="contact-item" href="https://www.linkedin.com/in/dan-sandoval/" target="_blank">
+                <img src={linkedinImg} className=" img-fluid" alt="linkedin" style={{width: '60px'}}/>
               </a>
-              <img src={emailImg} className="img-fluid mb-4" alt="email" style={{width: '60px'}}/>
-              <img src={smartphoneImg} className="img-fluid mb-4" alt="phone" style={{height: '62px'}}/>
+              <div className="contact-item" data-bs-placement="bottom" title="click to copy email address">
+                <img src={emailImg} onClick={() =>  {navigator.clipboard.writeText('dansaro.groger@gmail.com'); alert("Email address copied to clipboard")}} className="img-fluid" alt="email" style={{width: '60px'}}/>
+              </div>
+              <div className="contact-item tt" data-bs-placement="bottom" title="click to copy phone number">
+                <img src={smartphoneImg} onClick={() =>  {navigator.clipboard.writeText('+(57)300528TEST'); alert("Phone number copied to clipboard")}} className="img-fluid" alt="phone" style={{height: '62px'}}/>
+              </div>
             </div>
-            <p className="footer-c text-light">© Daniel Sandoval 2021</p>
+            <p className="footer-c text-light">© Daniel Sandoval - 2021</p>
           </div>
 
 

@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container-xxl">
         {/* navbar brand / title */}
         <a className="navbar-brand" href="#intro">
-          <span className="text-light fw-bold">
+          <span className="slide-right text-light fw-bold pe-3">
             <img src={danLogo} alt="DAN" />
             DANIEL SANDOVAL
           </span>

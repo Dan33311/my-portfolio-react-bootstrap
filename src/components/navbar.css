@@ -1,3 +1,8 @@
+.nn {
+  background: rgb(43,217,88);
+  background: linear-gradient(90deg, rgba(43,217,88,1) 0%, rgba(43,183,217,1) 100%);
+}
+
 .navbar {
   background-image: url(../assets/background-gradient-hero.png);
   background-repeat: no-repeat;
@@ -6,16 +11,8 @@
   height: 250px;
 }
 
-@media only screen and (max-width: 767px) {
-  .navbar {
-    height: 300px;
-  }
-  .nav-n {
-    margin-top: 10px;
-  }
-  .nav-a {
-    text-align: end;
-  }
+.nav-a {
+  font-size: 1.1rem;
 }
 
 .navbar-brand img {
@@ -32,6 +29,42 @@
 .custom-toggler.navbar-toggler {
   border-color: rgb(255, 255, 255, 0.8);
   color: #fbf5e538;
+}
+
+.navbar-brand span:hover {
+  transition: all .7s;
+  background: rgb(255, 255, 255, 0.2);
+}
+
+.nav-a:hover {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.157);
+  background: rgba(255, 255, 255, 0.157);
+  border-radius: 0.3rem;
+  transition: all .7s;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    background-image: url(../assets/background-gradient-hero-e.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+    /* height: 300px; */
+    margin-bottom: 30px;
+  }
+  .nav-n {
+    margin-top: 10px;
+  }
+  .nav-a {
+    text-align: end;
+    margin-right: 10px;
+  }
+  .nav-a:hover {
+    /* font-size: 1.2rem; */
+    padding-right: 10px;
+    transition: all .7s;
+  }
 }
 
 
@@ -63,7 +96,6 @@
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-
 .card-w:nth-child(odd) .card-c{
   border: 1px solid #dee2e6;
   border-radius: 0 0.5rem 0.5rem 0;
@@ -71,6 +103,22 @@
 .card-w:nth-child(even) .card-c{
   border: 1px solid #dee2e6;
   border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.card-w:nth-child(odd) .card-i img:hover {
+  transform: translate(10px, -10px);
+  transition: all .7s;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255);
+  border-radius: 0.3rem;
+  transition: all .7s;
+}
+
+.card-w:nth-child(even) .card-i img:hover {
+  transform: translate(-10px, -10px);
+  transition: all .7s;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255);
+  border-radius: 0.3rem;
+  transition: all .7s;
 }
 
 
@@ -93,3 +141,13 @@
 .footer-c {
   margin-top: 140px;
 }
+
+.contact-item:hover {
+  box-shadow: 0 0 0 10px rgba(255,255,255,0.3);
+  border-radius: 0.3rem;
+  transition: all .7s;
+}
+
+/*  -------------------------------------------------------------  */
+
+
