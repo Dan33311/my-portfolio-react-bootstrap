@@ -1,3 +1,5 @@
+import Swal from 'sweetalert2'
+
 import lineImage from '../assets/line-w.png'
 import emailImg from '../assets/email-e.png'
 import linkedinImg from '../assets/linkedin-e.png'
@@ -6,6 +8,7 @@ import './navbar.css';
 
 
 const Contact = () => {
+  
   return (  
     <>
     <div className="card d-flex mx-auto my-5 border border-0" style={{maxWidth: '480px'}}>
@@ -30,10 +33,40 @@ const Contact = () => {
                 <img src={linkedinImg} className=" img-fluid" alt="linkedin" style={{width: '60px'}}/>
               </a>
               <div className="contact-item" data-bs-placement="bottom" title="click to copy email address">
-                <img src={emailImg} onClick={() =>  {navigator.clipboard.writeText('dansaro.groger@gmail.com'); alert("Email address copied to clipboard")}} className="img-fluid" alt="email" style={{width: '60px'}}/>
+                <img 
+                  className="img-fluid" 
+                  src={emailImg} 
+                  alt="email" 
+                  style={{width: '60px'}}
+                  onClick={() =>  {
+                    navigator.clipboard.writeText('dansaro.groger@gmail.com'); 
+                    // alert("Email address copied to clipboard")
+                    Swal.fire({
+                      position: 'top',
+                      icon: 'success',
+                      title: 'Email address copied to clipboard',
+                      showConfirmButton: false,
+                      timer: 2000
+                    })
+                  }}/>
               </div>
               <div className="contact-item tt" data-bs-placement="bottom" title="click to copy phone number">
-                <img src={smartphoneImg} onClick={() =>  {navigator.clipboard.writeText('+(57)300528TEST'); alert("Phone number copied to clipboard")}} className="img-fluid" alt="phone" style={{height: '62px'}}/>
+                <img 
+                  className="img-fluid" 
+                  src={smartphoneImg} 
+                  alt="phone" 
+                  onClick={() =>  {
+                    navigator.clipboard.writeText('+(57)300528-TEST'); 
+                    // alert("Phone number copied to clipboard")
+                    Swal.fire({
+                      position: 'top',
+                      icon: 'success',
+                      title: 'Phone number copied to clipboard',
+                      showConfirmButton: false,
+                      timer: 2000
+                    })
+                  }} 
+                  style={{height: '62px'}}/>
               </div>
             </div>
             <p className="footer-c text-light">© Daniel Sandoval - 2021</p>
