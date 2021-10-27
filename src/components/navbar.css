@@ -70,6 +70,13 @@
 
 
 /* tech stack section  ------------------------------------------------  */
+.btn-download:hover {
+  color: white;
+}
+
+
+
+/* tech stack section  ------------------------------------------------  */
 /* border: 1px solid red; */
 .card-tc {
   border-radius: 0.75rem;

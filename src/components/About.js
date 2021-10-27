@@ -1,7 +1,9 @@
 import developerImage from '../assets/developer.png'
 import lineImage from '../assets/line-b.png'
+import myPDF from '../assets/my-cv.pdf'
 
 const About = () => {
+
   return (  
     <section id="about">
       <div className="container-lg">
@@ -27,9 +29,16 @@ const About = () => {
                 </p>
                 {/* <!-- no display this <p> in small screens --> */}
                 <p className="card-text mx-5 d-lg-block">Constanly learning, working on my tech stack with NodeJS & Express, mainly using MongoDB as database. <br></br>Fighting Games Tournament Competitor.</p>
-                {/* <a href="/" className="btn btn-outline-primary btn-lg mt-3">
-                  Contact
-                </a> */}
+                <a 
+                  className="btn-download btn btn-outline-primary btn-lg mt-5"
+                  href={myPDF} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  // download="Daniel-Sandoval-CV.pdf"
+                  onClick={() => window.open(myPDF)} 
+                >
+                  Download my CV
+                </a>
               </div>
             </div>
           </div>
