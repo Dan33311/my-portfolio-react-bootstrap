@@ -13,8 +13,8 @@ const ProjectCard = ({ title, description, iconSrc, text, urlProject, urlRepo })
               <img src={iconSrc} alt="icon" className="img-responsive mb-2 me-1" style={{width: '40px'}}/>            
             </span> {text}
           </p>
-          <a className="btn btn-primary rounded text-light me-2 mb-3" href={urlProject} target="_blank" style={{width: '77px'}}>View</a>
-          <a className="btn btn-secondary rounded text-light ms-2 mb-3" href={urlRepo} target="_blank">GitHub</a>
+          <a className="btn btn-primary rounded text-light me-2 mb-3" href={urlProject} target="_blank" rel="noreferrer" style={{width: '77px'}}>View</a>
+          <a className="btn btn-secondary rounded text-light ms-2 mb-3" href={urlRepo} target="_blank" rel="noreferrer">GitHub</a>
         {/* </div> */}
       </div>
     </>

@@ -29,7 +29,7 @@ const Contact = () => {
               <img src={lineImage} className="img-fluid mb-4" alt="line" />
             </div>
             <div className="d-flex justify-content-around align-items-center my-5 pt-5" style={{width: '400px'}}>
-              <a className="contact-item" href="https://www.linkedin.com/in/dan-sandoval/" target="_blank">
+              <a className="contact-item" href="https://www.linkedin.com/in/dan-sandoval/" target="_blank" rel="noreferrer">
                 <img src={linkedinImg} className=" img-fluid" alt="linkedin" style={{width: '60px'}}/>
               </a>
               <div className="contact-item" data-bs-placement="bottom" title="click to copy email address">
