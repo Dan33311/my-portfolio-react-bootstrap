@@ -1,6 +1,7 @@
 import developerImage from '../assets/developer.png'
 import lineImage from '../assets/line-b.png'
 import myPDF from '../assets/my-cv.pdf'
+import 'animate.css';
 
 const About = () => {
 
@@ -11,11 +12,11 @@ const About = () => {
 
           {/* card */}
           <div className="col-md-5 text-center text-md-start">
-            <div className="card border-0">
-              <div className="card-body text-center py-4">
-                <h2 className="card-title mb-2 display-5" style={{fontFamily: 'Prata'}}>About Me</h2>
+            <div className="card border-0 carddd">
+              <div className="card-body text-center py-4">              
+                <h2 className="card-title mb-2 display-5 animate__backInLeft animate__delay-5s	5s" style={{fontFamily: 'Prata'}}>About Me</h2>
                 <div>
-                  <img src={lineImage} className="img-fluid mb-4" alt="line" />
+                  <img src={lineImage} className="img-fluid mb-4 animate__backInLeft animate__delay-5s	5s" alt="line" />
                 </div>
                 <span className="text-primary display-6">
                   <i class="bi bi-person"></i>

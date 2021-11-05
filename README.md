@@ -9,11 +9,12 @@ A list of technologies used within the project:
 * [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [Bootstrap](https://getbootstrap.com/) - the most popular CSS Framework for developing responsive and mobile-first websites.
 * [Bootstrap Icons](https://icons.getbootstrap.com/) - open source icon library
+* [AOS](https://www.npmjs.com/package/aos) - Small library to animate elements on your page as you scroll.
 
 
 ## Site
 ***
-(https://)
+(https://dan-sandoval.vercel.app/)
 
 
  ## Others
@@ -34,7 +35,8 @@ A list of technologies used within the project:
 * `/* toggle button for mobile nav */` color changed black to white (navbar.css (`.custom-toggler`))
 
 * About Me section added
- 
+
+* AOS - Animate on scroll library
 
 ***
 

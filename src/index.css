@@ -11,3 +11,345 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* navbar section  ------------------------------------------------  */
+
+.nn {
+  background: rgb(43,217,88);
+  background: linear-gradient(90deg, rgba(43,217,88,1) 0%, rgba(43,183,217,1) 100%);
+}
+
+.navbar {
+  /* background-image: url(../assets/background-gradient-hero.png); */
+  background-image: url(./assets/background-gradient-hero.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
+
+.nav-a {
+  font-size: 1.1rem;
+}
+
+.navbar-brand img {
+  width: 60px;
+  margin-right: 20px;
+  margin-top: -7px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255, 0.8);
+  color: #fbf5e538;
+}
+
+.navbar-brand span:hover {
+  transition: all .7s;
+  background: rgb(255, 255, 255, 0.2);
+}
+
+.nav-a:hover {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.157);
+  background: rgba(255, 255, 255, 0.157);
+  border-radius: 0.3rem;
+  transition: all .7s;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    /* background-image: url(../assets/background-gradient-hero-e.png); */
+    background-image: url(./assets/background-gradient-hero-e.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+    /* height: 300px; */
+    margin-bottom: 30px;
+  }
+  .nav-n {
+    margin-top: 10px;
+  }
+  .nav-a {
+    text-align: end;
+    margin-right: 10px;
+  }
+  .nav-a:hover {
+    /* font-size: 1.2rem; */
+    padding-right: 10px;
+    transition: all .7s;
+  }
+}
+
+
+
+/* tech stack section  ------------------------------------------------  */
+.btn-download:hover {
+  color: white;
+}
+
+
+
+/* tech stack section  ------------------------------------------------  */
+/* border: 1px solid red; */
+.card-tc {
+  border-radius: 0.75rem;
+}
+
+
+
+/* projects section  --------------------------------------------------  */
+.card-w:nth-child(even) .card-p {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ps {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+
+.card-w:nth-child(odd) .card-i img {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.card-w:nth-child(even) .card-i img {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.card-w:nth-child(odd) .card-c{
+  border: 1px solid #dee2e6;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.card-w:nth-child(even) .card-c{
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.card-w:nth-child(odd) .card-i img:hover {
+  /* transform: translate(10px, -10px); */
+  transition: all .7s;
+  /* box-shadow: 0 0 0 10px rgba(255, 255, 255); */
+  /* border-radius: 0.3rem; */
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.card-w:nth-child(even) .card-i img:hover {
+  /* transform: translate(-10px, -10px); */
+  transition: all .9s;
+  /* box-shadow: 0 0 0 10px rgba(255, 255, 255); */
+  /* border-radius: 0.3rem; */
+  
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+
+}
+
+
+
+/* contact section  --------------------------------------------------  */
+#contact {
+  background-image: url(./assets/footer-image-b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 776px; */
+  height: 690px;
+}
+
+.contact-card {
+  padding-top: 60px;
+  /* border: 1px solid red; */
+}
+
+.footer-c {
+  margin-top: 140px;
+}
+
+.contact-item:hover {
+  box-shadow: 0 0 0 10px rgba(255,255,255,0.3);
+  border-radius: 0.3rem;
+  transition: all .7s;
+}
+
+/*  OTHER ANIMATIONS  -------------------------------------------------------------  */
+/*  -------------------------------------------------------------  */
+.containerr .box .title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+.containerr .box .title .block {
+  width: 0%;
+  height: inherit;
+  background: rgba(255,255,255,0.3);
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  display: flex;
+  margin-top: -8px;
+}
+.containerr .box .title h1 {
+  /* font-family: 'Poppins'; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: #fff;
+  /* font-size: 22px; */
+  font-size: 1.5rem;
+
+  -webkit-animation: mainFadeIn 2s forwards;
+  -o-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+.containerr .box .title h1 span {
+  width: 0px;
+  height: 0px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffffff;
+  -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  margin-left: 5px;
+  margin-top: -100px;
+  position: absolute;
+  bottom: 13px;
+  right: -6px;
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: #ffffff;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    opacity: 1;
+    bottom: 45px;
+  }
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+  100% {
+    width: 7px;
+    height: 7px;
+    background: #ffffff00;
+    border: 0px solid rgb(255, 255, 255);
+    bottom: 4px;
+  }
+}
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+
+
+/*  ABOUT SECTION ANIMATION  -------------------------------------------------------------  */
+@keyframes slideInFromDown {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+
+#about {  
+  animation-duration: 1s; /* the duration of the animation */
+  animation-timing-function: ease-out; /* how the animation will behave */
+  animation-delay: 0s; /* how long to delay the animation from starting */
+  animation-iteration-count: 1; /* how many times the animation will play */
+  animation-name: slideInFromDown; /* the name of the animation we defined above */
+
+  /* This section calls the slideInFromLeft animation we defined above */
+  /* shorthand version (version corta) */
+  animation: 1s ease-out 0s 1 slideInFromDown;
+
+  padding: 30px;
+}
+
+#techstack {  
+  animation-duration: 1s; /* the duration of the animation */
+  animation-timing-function: ease-out; /* how the animation will behave */
+  animation-delay: 0s; /* how long to delay the animation from starting */
+  animation-iteration-count: 1; /* how many times the animation will play */
+  animation-name: slideInFromDown; /* the name of the animation we defined above */
+
+  /* This section calls the slideInFromLeft animation we defined above */
+  /* shorthand version (version corta) */
+  animation: 1s ease-out 0s 1 slideInFromDown;
+
+  padding: 30px;
+}

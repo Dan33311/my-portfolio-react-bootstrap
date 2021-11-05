@@ -1,4 +1,7 @@
 import Swal from 'sweetalert2'
+import { useEffect } from 'react';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import lineImage from '../assets/line-w.png'
 import emailImg from '../assets/email-e.png'
@@ -8,20 +11,24 @@ import './navbar.css';
 
 
 const Contact = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
   
   return (  
     <>
-    <div className="card d-flex mx-auto my-5 border border-0" style={{maxWidth: '480px'}}>
-      <div className="card-body contact-card">
-        <p className="card-text text-center">I'm seeking out opportunities to get my first job as developer, if you have any request or question, send me a message. Feel free to reach out to me any time.</p>
+      <div className="card d-flex mx-auto my-5 border border-0" style={{maxWidth: '480px'}}>
+        <div className="card-body contact-card">
+          <p className="card-text text-center" data-aos="fade-up">I'm seeking out opportunities to get my first job as developer, if you have any request or question, send me a message. Feel free to reach out to me any time.</p>
+        </div>
       </div>
-    </div>
       {/* <div class="text-center contact-text-w mt-5 mb-5 mx-auto pt-5" style={{width: '630px'}}>
         <p class="lead contact-text">I'm seeking out opportunities to get my first job as developer, if you have any request or question, send me a message. Feel free to reach out to me any time. </p>
       </div> */}
       
       <section id="contact">
-        <div className="container pt-5">
+        <div className="container pt-5" data-aos="fade-up">
 
           <div class="contact d-flex flex-column align-items-center mt-5 pt-5">
             <h2 className="card-title mt-5 mb-3 display-5" style={{fontFamily: 'Prata', color: 'white'}}>Contact Information</h2>
@@ -69,7 +76,7 @@ const Contact = () => {
                   style={{height: '62px'}}/>
               </div>
             </div>
-            <p className="footer-c text-light">© Daniel Sandoval - 2021</p>
+            <p className="footer-c text-light">© 2021 - Daniel Sandoval</p>
           </div>
 
 

@@ -1,16 +1,29 @@
-import './navbar.css'
+// import './navbar.css'
+import '../index.css'
 import danLogo from '../assets/dan-logo-vector-w.png'
+
 
 const Navbar = () => {
   return (  
     <nav className="navbar navbar-expand-md navbar-light pt-5 pb-4 align-items-start">
       <div className="container-xxl">
         {/* navbar brand / title */}
-        <a className="navbar-brand" href="#intro">
+        {/* <a className="navbar-brand" href="#intro">
           <span className="slide-right text-light fw-bold pe-3">
             <img src={danLogo} alt="DAN" />
             DANIEL SANDOVAL
           </span>
+        </a> */}
+        <a className="navbar-brand" href="#intro">
+          <div className="containerr">
+            <div className="box">
+              <div className="title">
+                <img src={danLogo} alt="DAN" />
+                <span className="block"></span>
+                <h1 className="text-light fw-bold">DANIEL SANDOVAL&nbsp;&nbsp;&nbsp;<span></span></h1>
+              </div>
+            </div>
+          </div>
         </a>
         {/* toggle button for mobile nav */}
         <button className="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">

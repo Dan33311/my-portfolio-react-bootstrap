@@ -1,3 +1,7 @@
+import { useEffect } from 'react';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 import './navbar.css';
 import ProjectCard from './ProjectCard';
 
@@ -56,12 +60,18 @@ const projectsCards = [
 ]
 
 const Projects = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
+
   return (  
     <section id="projects" className="ps bg-dark bg-opacity-10">
       <div className="container-lg">
 
-        <div className="text-center">
-          <h2 className="card-title mt-4 mb-2 display-5" style={{fontFamily: 'Prata'}}>Projects</h2>
+        <div className="text-center" data-aos="fade-up">
+          <h2 className="card-title mt-1 mb-2 display-5" style={{fontFamily: 'Prata'}}>Projects</h2>
           <div className="mb-4">
             <img src={lineImage} className="img-fluid" alt="line" />
           </div>
@@ -71,7 +81,7 @@ const Projects = () => {
         <div>
           {projectsCards.map(projectCard =>
           // funcionan los child, NO row-reverse
-          <div className="card card-w bg-transparent border border-0 mb-3 pt-2">
+          <div className="card card-w bg-transparent border border-0 mb-3 pt-2" data-aos="fade-up">
             {/* aca aplica el row-reverse, NO funcionan los child */}
             <div className="card-p row g-0  justify-content-center align-items-center" key={projectCard.id}>
               <div className="card-i d-none d-sm-none d-md-block col-md-4 d-flex" style={{width: '303px', height: '304px'}}>{/* justify-content-end */}
