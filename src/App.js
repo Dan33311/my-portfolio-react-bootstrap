@@ -10,12 +10,14 @@ import About from './components/About';
 import TechCards from './components/TechCards';
 import Projects from './components/Projects'
 import Contact from './components/Contact';
+import ScrollButton from './components/ScrollButton';
 
 function App() {
   
   return (
     <div className="App">
       <Navbar/>
+      <ScrollButton/>
       <About/>
       <TechCards/>
       <Projects/>
