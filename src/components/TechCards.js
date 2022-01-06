@@ -74,7 +74,7 @@ const Cards = () => {
 
 
   return (
-    <section id="techstack" className="bg-dark bg-opacity-10 mt-5 pb-1 pt-5">
+    <section id="techstack" className="bg-dark bg-opacity-10 mt-5 pt-5 pb-1">
       <div className="container-lg" data-aos="fade-up" >
 
         <div className="text-center">
@@ -87,7 +87,7 @@ const Cards = () => {
 
         <div className="row my-3 g-3 align-items-center justify-content-center">
           {cards.map(card => 
-            <div className="col-10 col-lg-4 col-xl-4" key={card.id}>          
+            <div className="col-auto col-lg-4 col-xl-4" key={card.id}>          
               <Techcard 
                 title={card.title} 
                 iconSrc={card.icon} 

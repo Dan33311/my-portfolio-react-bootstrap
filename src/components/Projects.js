@@ -50,7 +50,7 @@ const projectsCards = [
   {
     id: 4,
     title: 'Markdown App',
-    description: 'This app allow us to write Markdown, you could view Markdown info, edit and deleted it',
+    description: 'This app allow us to write Markdown, you could view Markdown info, edit and delete it',
     text: 'NodeJS, Express, MongoDB, EJS',
     icon: projectIcon,
     image: projectImgFour,
@@ -81,13 +81,13 @@ const Projects = () => {
         <div>
           {projectsCards.map(projectCard =>
           // funcionan los child, NO row-reverse
-          <div className="card card-w bg-transparent border border-0 mb-3 pt-2" data-aos="fade-up">
+          <div className="card card-w bg-transparent border border-0 mb-3 pt-2" key={projectCard.id} data-aos="fade-up">
             {/* aca aplica el row-reverse, NO funcionan los child */}
-            <div className="card-p row g-0  justify-content-center align-items-center" key={projectCard.id}>
+            <div className="card-p row g-0  justify-content-center align-items-center" >
               <div className="card-i d-none d-sm-none d-md-block col-md-4 d-flex" style={{width: '303px', height: '304px'}}>{/* justify-content-end */}
                 <img className="img-fluid" src={projectCard.image} alt="project" style={{height: '304px'}}/>         
               </div>
-              <div className="card-c bg-white col-md-5" style={{width: '424px', height: '304px'}}> 
+              <div className="card-c bg-white col-md-5" style={{width: '424px', height: 'auto'}}> 
                 <ProjectCard 
                   title={projectCard.title} 
                   description={projectCard.description} 

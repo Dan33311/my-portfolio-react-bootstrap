@@ -19,13 +19,13 @@ const About = () => {
                   <img src={lineImage} className="img-fluid mb-4 animate__backInLeft animate__delay-5s	5s" alt="line" />
                 </div>
                 <span className="text-primary display-6">
-                  <i class="bi bi-person"></i>
+                  <i className="bi bi-person"></i>
                 </span>
                 <h4 className="card-title mb-4">Daniel Sandoval</h4>
                 
                 <p className="card-text mx-5 d-lg-block">
                   <span className="text-primary fw-bold">
-                    <i class="bi bi-geo-alt"></i>
+                    <i className="bi bi-geo-alt"></i>
                   </span> Bogota - Colombia
                 </p>
                 {/* <!-- no display this <p> in small screens --> */}
