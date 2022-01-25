@@ -30,32 +30,30 @@ code {
   background-size: cover;
   height: 250px;
 }
-
 .nav-a {
   font-size: 1.1rem;
 }
-
 .navbar-brand img {
   width: 60px;
   margin-right: 20px;
   margin-top: -7px;
+  animation: logoAnimation 0s 2.7s forwards;
+  /* visibility: hidden; */
 }
 
-.custom-toggler .navbar-toggler-icon {
+/* toogle button - No used now */
+/* .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  
 }
-
 .custom-toggler.navbar-toggler {
   border-color: rgb(255, 255, 255, 0.8);
   color: #fbf5e538;
-}
+} */
 
 .navbar-brand span:hover {
   transition: all .7s;
   background: rgb(255, 255, 255, 0.2);
 }
-
 .nav-a:hover {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.157);
   background: rgba(255, 255, 255, 0.157);
@@ -65,32 +63,68 @@ code {
 
 @media only screen and (max-width: 767px) {
   .navbar {
-    /* background-image: url(../assets/background-gradient-hero-e.png); */
     background-image: url(./assets/background-gradient-hero-e.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 280px;
-    /* height: 300px; */
-    margin-bottom: 30px;
   }
+  .navbar-brand {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-brand .title {
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: -20px;
+    margin-top: -20px;
+    width: 100%;
+  }
+  .navbar-brand img {
+    margin: 0;
+    margin-right: 10px;
+    margin-top: -4px;
+    padding: 0;
+    opacity: 0;
+    /* visibility: hidden; */
+  }
+  .navbar-brand h1 {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+  }
+
   .nav-n {
-    margin-top: 10px;
+    background-image: url(./assets/background-gradient-hero-e.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 44px;
+    padding: 2px 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
   }
   .nav-a {
     text-align: end;
     margin-right: 10px;
   }
   .nav-a:hover {
-    /* font-size: 1.2rem; */
-    padding-right: 10px;
-    transition: all .7s;
+    padding: 4px;
   }
 }
 
 
 
-/* tech stack section  ------------------------------------------------  */
+/* about me section  ------------------------------------------------  */
 .btn-download:hover {
   color: white;
 }
@@ -134,24 +168,21 @@ code {
 }
 
 .card-w:nth-child(odd) .card-i img:hover {
-  /* transform: translate(10px, -10px); */
-  transition: all .7s;
+  transform: translate(10px, -10px);
+  transition: all .8s;
   /* box-shadow: 0 0 0 10px rgba(255, 255, 255); */
   /* border-radius: 0.3rem; */
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
+  /* transform: rotate(360deg); */
+  /* -webkit-transform: rotate(360deg); */
 }
 
 .card-w:nth-child(even) .card-i img:hover {
-  /* transform: translate(-10px, -10px); */
-  transition: all .9s;
-  /* box-shadow: 0 0 0 10px rgba(255, 255, 255); */
-  /* border-radius: 0.3rem; */
-  
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-
+  /* transform: scale(1.05); */
+  transform: translate(-10px, -10px);
+  transition: all .8s;
 }
+
+
 
 
 
@@ -233,6 +264,13 @@ code {
   right: -6px;
 }
 
+@keyframes logoAnimation {
+  from { opacity: 0}
+  to {
+    /* visibility: visible; */
+    opacity: 1;
+  }
+}
 @keyframes mainBlock {
   0% {
     width: 0%;
@@ -314,6 +352,7 @@ code {
 
 
 
+
 /*  ABOUT SECTION ANIMATION  -------------------------------------------------------------  */
 @keyframes slideInFromDown {
   0% {
@@ -369,4 +408,9 @@ code {
   cursor: pointer;
   border-radius: 25px;
   opacity: .85;
+}
+@media only screen and (max-width: 767px){
+  .top-arrow {
+    display: none;
+  }
 }

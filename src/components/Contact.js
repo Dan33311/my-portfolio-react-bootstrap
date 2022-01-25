@@ -65,7 +65,7 @@ const Contact = () => {
                   alt="phone" 
                   onClick={() =>  {
                     navigator.clipboard.writeText('+(57)300528-TEST'); 
-                    alert("Phone number copied to clipboard")
+                    // alert("Phone number copied to clipboard")
                     Swal.fire({
                       position: 'top',
                       icon: 'success',
