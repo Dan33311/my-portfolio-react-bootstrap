@@ -87,7 +87,8 @@ const Cards = () => {
 
         <div className="row my-3 g-3 align-items-center justify-content-center">
           {cards.map(card => 
-            <div className="col-auto col-lg-4 col-xl-4" key={card.id}>          
+            // FIXME: // FIXED: Mobile view width
+            <div className="col-md-5 col-lg-5 col-xl-4" style={{minWidth: '386px'}} key={card.id}>          
               <Techcard 
                 title={card.title} 
                 iconSrc={card.icon} 
@@ -100,11 +101,11 @@ const Cards = () => {
                 itemFour={card.items.item4}
                 logosSrc={card.image}
               />
-            </div>)}          
+            </div>
+          )}          
         </div>
 
       </div>
-
     </section>
   );
 }

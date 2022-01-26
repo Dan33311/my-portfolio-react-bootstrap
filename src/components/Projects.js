@@ -80,29 +80,29 @@ const Projects = () => {
 
         <div>
           {projectsCards.map(projectCard =>
-          // funcionan los child, NO row-reverse
-          <div className="card card-w bg-transparent border border-0 mb-3 pt-2" key={projectCard.id} data-aos="fade-up">
-            {/* aca aplica el row-reverse, NO funcionan los child */}
-            <div className="card-p row g-0  justify-content-center align-items-center" >
-              <div className="card-i d-none d-sm-none d-md-block col-md-4 d-flex" style={{width: '303px', height: '304px'}}>{/* justify-content-end */}
-                <img className="img-fluid" src={projectCard.image} alt="project" style={{height: '304px'}}/>         
-              </div>
-              <div className="card-c bg-white col-md-5" style={{width: '424px', height: 'auto'}}> 
-                <ProjectCard 
-                  title={projectCard.title} 
-                  description={projectCard.description} 
-                  iconSrc={projectCard.icon} 
-                  text={projectCard.text}
-                  urlProject={projectCard.urlProject}
-                  urlRepo={projectCard.urlRepo}
-                />
+            // funcionan los child, NO row-reverse
+            <div className="card card-w bg-transparent border border-0 mb-3 pt-2" key={projectCard.id} data-aos="fade-up">
+              {/* aca aplica el row-reverse, NO funcionan los child */}
+              <div className="card-p row g-0  justify-content-center align-items-center" >
+                <div className="card-i d-none d-sm-none d-md-block col-md-4 d-flex" style={{width: '303px', height: '304px'}}>{/* justify-content-end */}
+                  <img className="img-fluid" src={projectCard.image} alt="project" style={{height: '304px'}}/>         
+                </div>
+                <div className="card-c bg-white col-md-5" style={{width: '424px', height: 'auto'}}> 
+                  <ProjectCard 
+                    title={projectCard.title} 
+                    description={projectCard.description} 
+                    iconSrc={projectCard.icon} 
+                    text={projectCard.text}
+                    urlProject={projectCard.urlProject}
+                    urlRepo={projectCard.urlRepo}
+                  />
+                </div>
               </div>
             </div>
-          </div>)}          
+          )}          
         </div>
 
       </div>
-
     </section>
   );
 }

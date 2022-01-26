@@ -13,18 +13,15 @@ code {
 }
 
 
-
-/* navbar section  ------------------------------------------------  */
-
+/* NAVBAR SECTION  ------------------------------------------------  */
+/* NAVBAR SECTION  ------------------------------------------------  */
 .nn {
   background: rgb(43,217,88);
   background: linear-gradient(90deg, rgba(43,217,88,1) 0%, rgba(43,183,217,1) 100%);
 }
-
 .navbar {
   /* background-image: url(../assets/background-gradient-hero.png); */
   background-image: url(./assets/background-gradient-hero.png);
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -124,40 +121,47 @@ code {
 
 
 
-/* about me section  ------------------------------------------------  */
+/* ABOUT ME SECTION  ------------------------------------------------  */
+/* ABOUT ME SECTION  ------------------------------------------------  */
 .btn-download:hover {
   color: white;
 }
 
+@media only screen and (max-width: 480px) {
+  .p-about {
+    /* outline: 1px solid salmon; */
+    margin-top: 24px !important;
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+  }
+}
 
 
-/* tech stack section  ------------------------------------------------  */
-/* border: 1px solid red; */
+
+/* TECHSTACK SECTION  ------------------------------------------------  */
+/* TECHSTACK SECTION  ------------------------------------------------  */
 .card-tc {
   border-radius: 0.75rem;
 }
 
 
 
-/* projects section  --------------------------------------------------  */
+/* PROJECTS SECTION  ------------------------------------------------  */
+/* PROJECTS SECTION  ------------------------------------------------  */
 .card-w:nth-child(even) .card-p {
   display: flex;
   flex-direction: row-reverse;
 }
-
 .ps {
   padding-bottom: 100px;
   padding-top: 100px;
 }
-
-
 .card-w:nth-child(odd) .card-i img {
   border-radius: 0.5rem 0 0 0.5rem;
 }
 .card-w:nth-child(even) .card-i img {
   border-radius: 0 0.5rem 0.5rem 0;
 }
-
 .card-w:nth-child(odd) .card-c{
   border: 1px solid #dee2e6;
   border-radius: 0 0.5rem 0.5rem 0;
@@ -166,7 +170,6 @@ code {
   border: 1px solid #dee2e6;
   border-radius: 0.5rem 0 0 0.5rem;
 }
-
 .card-w:nth-child(odd) .card-i img:hover {
   transform: translate(10px, -10px);
   transition: all .8s;
@@ -175,7 +178,6 @@ code {
   /* transform: rotate(360deg); */
   /* -webkit-transform: rotate(360deg); */
 }
-
 .card-w:nth-child(even) .card-i img:hover {
   /* transform: scale(1.05); */
   transform: translate(-10px, -10px);
@@ -184,9 +186,8 @@ code {
 
 
 
-
-
-/* contact section  --------------------------------------------------  */
+/* CONTACT SECTION  ------------------------------------------------  */
+/* CONTACT SECTION  ------------------------------------------------  */
 #contact {
   background-image: url(./assets/footer-image-b.png);
   background-repeat: no-repeat;
@@ -195,24 +196,26 @@ code {
   /* height: 776px; */
   height: 690px;
 }
-
 .contact-card {
   padding-top: 60px;
-  /* border: 1px solid red; */
 }
-
+.contact-card p {
+  padding: 0 20px;
+  font-size: 1.3em;
+}
 .footer-c {
   margin-top: 140px;
 }
-
 .contact-item:hover {
   box-shadow: 0 0 0 10px rgba(255,255,255,0.3);
   border-radius: 0.3rem;
   transition: all .7s;
 }
 
-/*  OTHER ANIMATIONS  -------------------------------------------------------------  */
-/*  -------------------------------------------------------------  */
+
+
+/*  ANIMATIONS  ---------------------------------------------------  */
+/*  ---------------------------------------------------------------  */
 .containerr .box .title {
   width: 100%;
   position: relative;
@@ -350,10 +353,7 @@ code {
   }
 }
 
-
-
-
-/*  ABOUT SECTION ANIMATION  -------------------------------------------------------------  */
+/*  ABOUT SECTION ANIMATION  --------------------------------------  */
 @keyframes slideInFromDown {
   0% {
     transform: translateY(10%);
@@ -376,7 +376,7 @@ code {
   /* shorthand version (version corta) */
   animation: 1s ease-out 0s 1 slideInFromDown;
 
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 #techstack {  
@@ -394,7 +394,9 @@ code {
 }
 
 
-/*  GO TO TOP BUTTON  -------------------------------------------------------------  */
+
+/* GO TO TOP BUTTON  ------------------------------------------------  */
+/* GO TO TOP BUTTON  ------------------------------------------------  */
 .top-arrow {
   width: 48px;
   position: fixed;
@@ -409,6 +411,7 @@ code {
   border-radius: 25px;
   opacity: .85;
 }
+
 @media only screen and (max-width: 767px){
   .top-arrow {
     visibility: hidden;
