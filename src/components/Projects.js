@@ -5,7 +5,9 @@ import 'aos/dist/aos.css'
 import './navbar.css';
 import ProjectCard from './ProjectCard';
 
-import lineImage from '../assets/line-b.png'
+import lineImage from '../assets/line-b.png';
+import projectImgQandA from '../assets/square-q&a.png';
+import projectImgCountrySelect from '../assets/image-country-selection.png';
 import projectImgOne from "../assets/square-kcc.png";
 import projectImgTwo from "../assets/square-spacex.png";
 import projectImgThree from "../assets/square-toodo.png";
@@ -16,6 +18,27 @@ import projectIcon from '../assets/computer.png';
 const projectsCards = [
   {
     id: 1,
+    title: 'Quiz App',
+    description: 'Questions, multiple choice Answers, and rewards. Project focus on sharing state between components',
+    text: 'React, Router, UseState',
+    icon: projectIcon,
+    image: projectImgQandA,
+    urlProject: 'https://react-quiz-dan33311.vercel.app/',
+    urlRepo: 'https://github.com/Dan33311/q-and-a-app'
+  },
+  {
+    id: 2,
+    title: 'Countdown and Datepicker',
+    description: 'Chose a date and the app will show you a countdowntimer, when time is completed will show info about the country chosen',
+    text: 'React, Context, LocalStorage, API',
+    icon: projectIcon,
+    image: projectImgCountrySelect,
+    urlProject: 'https://prueba-tecnica-react-dan33311.vercel.app/',
+    urlRepo: 'https://github.com/Dan33311/prueba-tecnica-react'
+    
+  },
+  {
+    id: 3,
     title: 'SpaceX-API',
     description: 'Working with the SpaceX API, you can get info about launches, missions, rockets through a UI',
     text: 'React, Router, API, Fetch',
@@ -24,9 +47,8 @@ const projectsCards = [
     urlProject: 'https://spacex-phi.vercel.app/',
     urlRepo: 'https://github.com/Dan33311/spacex'
   },
-  
   {
-    id: 2,
+    id: 4,
     title: 'TOODO App',
     description: 'A TODO app, using React and React-Router, HOOKS, you can add, list, edit and delete task',
     text: 'React, React-Router, CRUD, CSS',
@@ -37,7 +59,7 @@ const projectsCards = [
     
   },
   {
-    id: 3,
+    id: 5,
     title: 'KOFCOLOMBIA',
     description: 'This app is using Bootstrap, we are able to customize Bootstrap styles through a SASS file',
     text: 'Bootstrap, SASS, Gulp',
@@ -48,7 +70,7 @@ const projectsCards = [
     
   },
   {
-    id: 4,
+    id: 6,
     title: 'Markdown App',
     description: 'This app allow us to write Markdown, you could view Markdown info, edit and delete it',
     text: 'NodeJS, Express, MongoDB, EJS',
