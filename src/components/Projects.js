@@ -76,7 +76,7 @@ const projectsCards = [
     text: 'NodeJS, Express, MongoDB, EJS',
     icon: projectIcon,
     image: projectImgFour,
-    urlProject: 'https://markdown-fighting-games-events.herokuapp.com/',
+    urlProject: 'https://markdown-crud-nodejs.onrender.com/',
     urlRepo: 'https://github.com/Dan33311/markdown-crud-project'
   },
 ]
