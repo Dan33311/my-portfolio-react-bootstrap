@@ -24,7 +24,7 @@ const Contact = () => {
         </div>
       </div>
       {/* <div class="text-center contact-text-w mt-5 mb-5 mx-auto pt-5" style={{width: '630px'}}>
-        <p class="lead contact-text">I'm seeking out opportunities to get my first job as developer, if you have any request or question, send me a message. Feel free to reach out to me any time. </p>
+        <p class="lead contact-text">I'm seeking out opportunities to get my a as developer, if you have any request or question, send me a message. Feel free to reach out to me any time. </p>
       </div> */}
       
       <section id="contact">
