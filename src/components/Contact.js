@@ -20,7 +20,7 @@ const Contact = () => {
     <>
       <div className="card d-flex mx-auto my-5 border border-0" style={{maxWidth: '726px'}}>
         <div className="card-body contact-card">
-        <p className="card-text text-center" data-aos="fade-up">I'm seeking out opportunities to get my first job as developer, <br></br>if you have any request or question, send me a message. Feel free to reach out to me any time.</p>
+        <p className="card-text text-center" data-aos="fade-up">I'm seeking out opportunities to get a job as developer, <br></br>if you have any request or question, send me a message. Feel free to reach out to me any time.</p>
         </div>
       </div>
       {/* <div class="text-center contact-text-w mt-5 mb-5 mx-auto pt-5" style={{width: '630px'}}>
